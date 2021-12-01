@@ -161,7 +161,11 @@ const heightWeightData = {
   tooltip: {
     // trigger: 'axis',
     showDelay: 0,
-    formatter: function (params) {
+    formatter: function (params: {
+      value: string | any[];
+      seriesName: string;
+      name: string;
+    }) {
       if (params.value.length > 1) {
         return (
           params.seriesName +
