@@ -4,7 +4,7 @@ import type { CSSProperties } from 'react';
 import type { EChartsOption, ECharts, SetOptionOpts } from 'echarts';
 
 export interface ReactEChartsProps {
-  option: EChartsOption;
+  option: EChartsOption | any;
   cssProps?: CSSProperties;
   settings?: SetOptionOpts;
   loading?: boolean;
